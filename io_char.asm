@@ -30,7 +30,8 @@ _main:
     mov edx, 1
     int 0x80
  
-.loop:
+; Loop Comment kardam !!!
+;.loop:
     ; sys_read
     mov eax, 0x03
     mov ebx, 0
@@ -50,8 +51,9 @@ _main:
     mov ecx, charac
     mov edx, 1
     int 0x80
-    
-    jmp .loop    
+
+;   Ba'adan khodet mituni dar biyari az comment kar mikone loop :)       
+;   jmp .loop    
 
     ; Exit System Call
     mov eax, 0x01
